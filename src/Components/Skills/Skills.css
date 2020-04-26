@@ -1,0 +1,19 @@
+#Skills {
+    text-align: center;
+}
+
+.Skills-leftWrapper {
+    float: left;
+    height: 100vh;
+    width: 40vw;
+
+    background-color: midnightblue;
+}
+
+.Skills-rightWrapper {
+    float: left;
+    height: 100vh;
+    width: 60vw;
+    
+    background-color: green;
+}

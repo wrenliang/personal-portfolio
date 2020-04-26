@@ -1,0 +1,22 @@
+#Projects {
+    text-align: center;
+}
+
+.Projects-leftWrapper {
+    float: left;
+    width: 60vw;
+
+    background-color: royalblue;
+}
+
+.Projects-rightWrapper {
+    float: left;
+    width: 40vw;
+
+    background-color: mediumseagreen;
+}
+
+.Projects-cardRow {
+    display: flex;
+    justify-content: space-evenly;
+}
