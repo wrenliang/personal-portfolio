@@ -1,11 +1,41 @@
 .ProjectCard {
+    --pcheight: 30vh;
+    --pcwidth: 25vw;
+
     text-align: center;
-    border-radius: 25px;
-    background-color: crimson;
-    height: 25vh;
-    width: 1.777 * 25vh;
+    border-radius: 15px;
+
+    height: var(--pcheight);
+    width: var(--pcwidth);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition-duration: 0.3s;
 }
 
+.ProjectCard-title {
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    width: var(--pcwidth);
+}
+
+.ProjectCard-description {
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    width: calc(var(--pcwidth) - 10px);
+    max-height: 3.5em;
+    
+    white-space: normal;
+    overflow: hidden;
+}
+
+.ProjectCard-icons {
+    display: flex;
+    justify-content: space-evenly;
+}
 
 
 

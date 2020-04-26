@@ -2,8 +2,8 @@ import React from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
 
 // Dependant Components
-import Projects from './Projects';
-import Skills from './Skills';
+import Projects from '../Components/Projects/Projects'
+import Skills from '../Components/Skills/Skills';
 
 // CSS
 import './App.css';

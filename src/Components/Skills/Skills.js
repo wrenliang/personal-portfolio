@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Dependant Components
-import TitleBlock from './TitleBlock';
+import TitleBlock from '../TitleBlock/TitleBlock';
 
 // CSS
 import './Skills.css';
