@@ -12,6 +12,8 @@
     flex-direction: column;
     justify-content: space-around;
     transition-duration: 0.3s;
+
+    cursor: pointer;
 }
 
 .ProjectCard-title {
@@ -26,7 +28,7 @@
     margin-bottom: 0px;
 
     width: calc(var(--pcwidth) - 10px);
-    max-height: 3.5em;
+    max-height: 4.5em;
     
     white-space: normal;
     overflow: hidden;

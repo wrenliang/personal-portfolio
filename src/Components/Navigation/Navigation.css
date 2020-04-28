@@ -1,0 +1,38 @@
+.Navigation {
+    position: fixed;
+    top: 0%;
+    width: 100vw;
+    height: 3em;
+    background-color: black;
+    z-index: 1;
+
+    display: flex;
+}
+
+.Navigation-left {
+    width: 40vw;
+    background-color: lightblue;
+}
+
+.Navigation-right {
+    width: 60vw;
+    background-color: lightcoral;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+li {
+    float: left;
+}
+
+
+.Navigation-underline {
+    height: 0.25em;
+    width: 50px;
+}
+
+
+.btn-custom {
+    color: white;
+}

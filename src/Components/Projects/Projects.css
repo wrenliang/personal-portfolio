@@ -1,5 +1,6 @@
 #Projects {
     text-align: center;
+    background-color: lightcyan;
 }
 
 .Projects-leftWrapper {
@@ -19,4 +20,30 @@
 .Projects-cardRow {
     display: flex;
     justify-content: space-evenly;
+}
+
+.fp-controlArrow {
+    position: absolute;
+    top: 95%;
+}
+
+.fp-controlArrow.fp-prev {
+
+
+    width: 50px;
+    height: 50px;
+
+    border: none;
+    cursor: pointer;
+    background: url(../../Assets/angle-double-left-solid.svg) no-repeat
+}
+.fp-controlArrow.fp-next {
+
+
+    width: 50px;
+    height: 50px;
+
+    border: none;
+    cursor: pointer;
+    background: url(../../Assets/angle-double-right-solid.svg) no-repeat;
 }
