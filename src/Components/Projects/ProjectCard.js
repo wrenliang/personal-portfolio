@@ -3,7 +3,7 @@ import React from 'react';
 // Dependant Components
 
 // CSS
-import './ProjectCard.css'
+import './ProjectCard.css';
 
 // Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

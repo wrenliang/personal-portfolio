@@ -2,9 +2,10 @@ import React from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
 
 // Dependant Components
-import Projects from '../Components/Projects/Projects'
+import Navigation from '../Components/Navigation/Navigation';
+import Homepage from '../Components/Homepage/Homepage';
+import Projects from '../Components/Projects/Projects';
 import Skills from '../Components/Skills/Skills';
-import Navigation from '../Components/Navigation/Navigation'
 
 // CSS
 import './App.css';
@@ -21,8 +22,9 @@ class App extends React.Component {
             ({state, fullpageApi}) => {
               return (
                   <ReactFullpage.Wrapper>
-                    <Projects />
-                    <Skills />
+                    <Homepage></Homepage>
+                    <Projects></Projects>
+                    <Skills></Skills>
                   </ReactFullpage.Wrapper>
               );
             }

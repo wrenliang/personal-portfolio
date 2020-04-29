@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 
 // Dependant Components
 import { Button } from 'react-bootstrap';
 
 // CSS
-import 'bootstrap/dist/css/bootstrap.min.css'
-import './Navigation.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './Navigation.css';
 
 
 class Navigation extends React.Component {

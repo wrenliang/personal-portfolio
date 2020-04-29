@@ -13,7 +13,11 @@ class Skills extends React.Component {
                 <div className="Skills-leftWrapper">
                     <TitleBlock title={'Skills'} description={'This is the skills page'}></TitleBlock>
                 </div>
+                <div className="Skills-midWrapper">
+                    <h1> hello 1 </h1>
+                </div>
                 <div className="Skills-rightWrapper">
+                    <h1> hello 2 </h1>
                 </div>
             </div>
         );

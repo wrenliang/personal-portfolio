@@ -5,21 +5,46 @@
 
 .Projects-leftWrapper {
     float: left;
+
+    height: 100vh;
     width: 60vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     background-color: royalblue;
 }
 
 .Projects-rightWrapper {
     float: left;
+
+    height: 100vh;
     width: 40vw;
 
-    background-color: mediumseagreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    background-color: cornflowerblue;
+}
+
+.Projects-octocat {
+    width: 200px;
+    height: 200px;
+}
+
+.btn-outline-danger {
 }
 
 .Projects-cardRow {
     display: flex;
     justify-content: space-evenly;
+}
+
+.Projects-highlights-label {
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
 }
 
 .fp-controlArrow {
@@ -28,8 +53,6 @@
 }
 
 .fp-controlArrow.fp-prev {
-
-
     width: 50px;
     height: 50px;
 
@@ -37,9 +60,8 @@
     cursor: pointer;
     background: url(../../Assets/angle-double-left-solid.svg) no-repeat
 }
+
 .fp-controlArrow.fp-next {
-
-
     width: 50px;
     height: 50px;
 

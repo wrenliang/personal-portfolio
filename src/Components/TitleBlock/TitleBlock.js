@@ -2,9 +2,8 @@ import React from 'react';
 
 // Dependant Components
 
-
 // CSS
-import './TitleBlock.css'
+import './TitleBlock.css';
 
 
 class TitleBlock extends React.Component {
