@@ -1,0 +1,39 @@
+.SkillCard {
+    text-align: center;
+    border-radius: 10px;
+    background-color: blueviolet;
+
+    width: 90%;
+}
+
+.SkillCard-title {
+    text-align: center;
+    margin-left: 0px;
+    text-decoration: underline;
+}
+
+.SkillCard-list {
+    margin-left: 0px;
+    padding-left: 0px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    list-style-type: none;
+}
+
+.SkillCard-list li {
+    font-size: 24px;
+    border: 1px solid black;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.SkillCard-list-li-ios {
+    color: green;
+}
+
+.SkillCard-list-li-web {
+    color: steelblue;
+}
