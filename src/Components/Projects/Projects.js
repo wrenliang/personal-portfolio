@@ -5,25 +5,75 @@ import '@fullpage/react-fullpage';
 // Dependant Components
 import ProjectCard from './ProjectCard';
 import TitleBlock from '../TitleBlock/TitleBlock';
+import ProjectSlide from './ProjectSlide';
 
 // CSS
 import './Projects.css';
 
+// Font Awesome
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import global_mapIcon from './MapIcon';
 
 class Projects extends React.Component {
     render() {
+        const githubIcon = global_mapIcon("github");
+
+        const keepfreshCard = {
+            title: 'keepfresh',
+            description: 'Full-stack iOS app for cooking sustainably, developed at UBC Launch Pad',
+            icons: ["swift", "javascript", "node"]
+        }
+
+        const jarvisCard = {
+            title: 'Jarvis Robot',
+            description: 'Autonomous line following robot that supports voice control and manual gyroscope driving mode',
+            icons: ["swift", "python", "raspberry-pi"]
+        }
+
+        const portfolioCard = {
+            title: 'Personal Website',
+            description: 'Online portfolio for showcasing projects and experiences',
+            icons: ["react", "javascript", "css"]
+        }
+
+        const sproutsCard = {
+            title: 'Sprouts',
+            description: 'Plant-care reminders app built at nwHacks 2020',
+            icons: ["swift", "javascript", "node"]
+        }
+
+        const testSlide = {
+            title: "Personal Website",
+            descriptionShort: "Online portfolio built using React, Bootstrap, and CSS",
+            descriptionLong: "//FILLER TEXT STILL HAVE NOT WRITTEN OUT YET",
+            icons: ["react", "javascript", "css"],
+            github: "http://www.github.com",
+            bgColor: "#088FDD",
+            imageURL: "LOCAL LINK TO IMAGE"
+        }
+
+        const testSlide2 = {
+            title: "Jarvis Robot",
+            descriptionShort: "Basically Iron Man lol",
+            descriptionLong: "//FILLER TEXT STILL HAVE NOT WRITTEN OUT YET",
+            icons: ["swift", "python", "raspberyy-pi"],
+            github: "http://www.github.com",
+            bgColor: "#FF3F47",
+            imageURL: "LOCAL LINK TO IMAGE"
+        }
+
         return (
             <div className="section" id="Projects">
                 <div className="slide">
                     <div className="Projects-leftWrapper">
                         <div className="Projects-cardRow">
-                            <ProjectCard title={"Project Title"} description={"This is a test description. I wonder what happens if I keep on typing. This is hopefully really long. Let's keep going! Let me keep on going."} icons={["swift", "java", "react"]} />
-                            <ProjectCard title={"keepfresh"} description={"UBC Launch Pad project for food management, using expiry tracking and recipe suggestions."} icons={["swift", "javascript", "node"]} />
+                            <ProjectCard {... keepfreshCard} />
+                            <ProjectCard {... jarvisCard} />
                         </div>
                         <h1 className="Projects-highlights-label">Some highlights</h1>
                         <div className="Projects-cardRow">
-                        <ProjectCard title={"Jarvis Robot"} description={"This is a test description. I wonder what happens if I keep on typing. This is hopefully really long. Let's keep going! Let me keep on going."} icons={["python", "swift", "raspberry-pi"]} />
-                        <ProjectCard title={"Portfolio Website"} description={"My personal website you're looking at! Current iteration built using React"} icons={["javascript", "react", "css"]} />
+                            <ProjectCard {... portfolioCard} />
+                            <ProjectCard {... sproutsCard} />
                         </div>
                     </div>
                     <div className="Projects-rightWrapper">
@@ -31,16 +81,14 @@ class Projects extends React.Component {
                         <div className="Projects-github-main">
                             <img className="Projects-octocat" alt="GitHub Icon" src={require('../../Assets/mountietocat.png')}></img>
                             <br />
-                            <Button variant="outline-danger">View on GitHub</Button>
+                            <Button variant="outline-danger" size="lg">
+                                <FontAwesomeIcon icon={githubIcon.img} size="1x"/> View on GitHub
+                            </Button>
                         </div>
                     </div>
                 </div>
-                <div className="slide">
-                    <h1> slide 2 </h1>
-                </div>
-                <div className="slide">
-                    <h1> slide 3 </h1>
-                </div>
+                <ProjectSlide {... testSlide}></ProjectSlide>
+                <ProjectSlide {... testSlide2}></ProjectSlide>
             </div>
         )
     }

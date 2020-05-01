@@ -16,7 +16,7 @@ class App extends React.Component {
     const Fullpage = () => (
       <ReactFullpage 
           licenseKey = {'k#7EkQX$k8'}
-          scrollingSpeed = {1000}
+          scrollingSpeed = {800}
 
           render = { 
             ({state, fullpageApi}) => {

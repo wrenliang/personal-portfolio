@@ -12,7 +12,7 @@ class Skills extends React.Component {
         return (
             <div className="section" id="Skills">
                 <div className="Skills-leftWrapper">
-                    <TitleBlock title={'Skills'} description={'This is the skills page'}></TitleBlock>
+                    <TitleBlock title={'Skills'} description={'My strengths are in iOS and web development'}></TitleBlock>
                 </div>
                 <div className="Skills-midWrapper">
                     <SkillCard title={'Languages'} skills={

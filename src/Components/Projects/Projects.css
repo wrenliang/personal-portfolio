@@ -16,6 +16,16 @@
     background-color: royalblue;
 }
 
+.Projects-cardRow {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Projects-highlights-label {
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+}
+
 .Projects-rightWrapper {
     float: left;
 
@@ -35,16 +45,6 @@
 }
 
 .btn-outline-danger {
-}
-
-.Projects-cardRow {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.Projects-highlights-label {
-    margin-top: 0.25em;
-    margin-bottom: 0.25em;
 }
 
 .fp-controlArrow {
