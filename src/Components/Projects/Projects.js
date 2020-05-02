@@ -56,7 +56,7 @@ class Projects extends React.Component {
             title: "Jarvis Robot",
             descriptionShort: "Basically Iron Man lol",
             descriptionLong: "//FILLER TEXT STILL HAVE NOT WRITTEN OUT YET",
-            icons: ["swift", "python", "raspberyy-pi"],
+            icons: ["swift", "python", "raspberry-pi"],
             github: "http://www.github.com",
             bgColor: "#FF3F47",
             imageURL: "LOCAL LINK TO IMAGE"
