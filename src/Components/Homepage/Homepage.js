@@ -23,23 +23,23 @@ class Homepage extends React.Component {
             <div className="section" id="Homepage">
                 <div className="Homepage-leftWrapper">
                     <div className="Homepage-welcome-message-wrapper">
-                        <h1 id="Homepage-welcome-message">Nice to meet you, my name is Wren Liang.</h1>
+                        <h1 id="Homepage-welcome-message"> Wren Liang </h1>
                     </div>
                     <div className="Homepage-description-wrapper">
                         <div className="Homepage-who-i-am-wrapper">
                             <h1>I am <TextLoop className="Homepage-animated-text" fade={true} mask={true} children={roles}
-                                interval={3000} adjustingSpeed={750} springConfig={{
+                                interval={5000} adjustingSpeed={500} springConfig={{
                                     stiffness: 300,
-                                    damping: 18
+                                    damping: 30
                                 }}
                                 ></TextLoop>
                             </h1>
                         </div>
                         <div className="Homepage-where-i-am-wrapper">
                             <h1> at <TextLoop className="Homepage-animated-text" fade={true} mask={true} children={locations}
-                                interval={3000} adjustingSpeed={750} springConfig={{
+                                interval={5000} adjustingSpeed={500} springConfig={{
                                     stiffness: 300,
-                                    damping: 18
+                                    damping: 30
                                 }}
                                 
                                 ></TextLoop>.
@@ -47,7 +47,8 @@ class Homepage extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div className="Homepage-rightWrapper">
+                {/* <div className="Homepage-rightWrapper">
+                
                     <div className="Homepage-photo-caption">
                         <p>
                             Photo Caption <br/>
@@ -55,7 +56,7 @@ class Homepage extends React.Component {
                             From South Africa
                         </p>
                     </div>
-                </div>
+                </div> */}
             </div>
         );
     }

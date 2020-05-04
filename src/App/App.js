@@ -6,6 +6,7 @@ import Navigation from '../Components/Navigation/Navigation';
 import Homepage from '../Components/Homepage/Homepage';
 import Projects from '../Components/Projects/Projects';
 import Skills from '../Components/Skills/Skills';
+import ContactPage from '../Components/Contact/ContactPage';
 
 // CSS
 import './App.css';
@@ -25,6 +26,7 @@ class App extends React.Component {
                     <Homepage></Homepage>
                     <Projects></Projects>
                     <Skills></Skills>
+                    <ContactPage></ContactPage>
                   </ReactFullpage.Wrapper>
               );
             }

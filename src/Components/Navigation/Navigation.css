@@ -3,7 +3,6 @@
     top: 0%;
     width: 100vw;
     height: 3em;
-    background-color: black;
     z-index: 1;
 
     display: flex;
@@ -11,12 +10,12 @@
 
 .Navigation-left {
     width: 40vw;
-    background-color: lightblue;
+    background-color: transparent;
 }
 
 .Navigation-right {
     width: 60vw;
-    background-color: lightcoral;
+    background-color: transparent;
 
     display: flex;
     justify-content: space-evenly;

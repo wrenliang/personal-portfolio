@@ -1,5 +1,6 @@
 // Font Awesome
 import { faGithub, faSwift, faJava, faPython, faCss3Alt, faHtml5, faJsSquare, faReact, faNode, faRaspberryPi} from '@fortawesome/free-brands-svg-icons';
+import { faFileAlt } from '@fortawesome/free-solid-svg-icons';
 
 const global_mapIcon = (name) => {
     var icon = {
@@ -36,6 +37,8 @@ const global_mapIcon = (name) => {
         icon.color = "#A72842";
     } else if (name === "github") {
         icon.img = faGithub;
+    } else if (name === "resume") {
+        icon.img = faFileAlt;
     }
 
     return icon;

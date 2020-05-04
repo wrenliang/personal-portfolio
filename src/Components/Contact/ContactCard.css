@@ -1,0 +1,66 @@
+.ContactCard {
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    background-color: black;
+}
+
+.ContactCard-left {
+    height: 100%;
+    width: 60%;
+
+    background-color: deepskyblue;
+}
+
+.ContactCard-profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.ContactCard-profile-pic {
+    height: 200px;
+    width: 200px;
+}
+
+.ContactCard-profile-name {
+    font-size: 60px;
+    color: white;
+}
+
+.ContactCard-contact-buttons {
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+}
+
+.ContactCard-contact-buttons Button {
+    width: 40%;
+}
+
+.ContactCard-right {
+    height: 100%;
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: green;
+}
+
+.ContactCard-right .btn-outline-dark {
+    border-width: 0px;
+}
+
+.ContactCard-right .btn-outline-dark:hover {
+    background-color: transparent;
+}

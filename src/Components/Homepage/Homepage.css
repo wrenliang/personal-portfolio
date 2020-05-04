@@ -1,32 +1,43 @@
 #Homepage {
-    background-color: lightsalmon;
+    background-image: url('../../Assets/rawson-frame.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .Homepage-leftWrapper {
     float: left;
 
-    width: 60vw;
+    width: 100vw;
     height: 100vh;
-
-    background-color: lightskyblue;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+.Homepage-leftWrapper h1 {
+    font-size: 48px;
+    color: white;
+}
+
 #Homepage-welcome-message {
     margin: auto;
 
-    width: 75%;
+    color: black;
 
-    font-size: 64px;
+    width: 50%;
+
+    font-size: 72px;
+
+    border-bottom: 2px solid white;
 }
 
 .Homepage-description-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 }
 
 .Homepage-who-i-am-wrapper {
@@ -34,10 +45,11 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    color: black;
 }
 
 .Homepage-animated-text {
-    color: darkslateblue;
+    color: #EAF6FF;
 }
 
 .Homepage-where-i-am-wrapper {
@@ -57,7 +69,6 @@
     flex-direction: column;
     justify-content: flex-end;
 
-    background-color: seagreen;
 }
 
 .Homepage-photo-caption {
