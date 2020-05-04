@@ -24,8 +24,8 @@ class App extends React.Component {
               return (
                   <ReactFullpage.Wrapper>
                     <Homepage></Homepage>
-                    <Projects></Projects>
                     <Skills></Skills>
+                    <Projects></Projects>
                     <ContactPage></ContactPage>
                   </ReactFullpage.Wrapper>
               );

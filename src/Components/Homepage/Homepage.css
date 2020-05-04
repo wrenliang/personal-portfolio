@@ -24,11 +24,11 @@
 #Homepage-welcome-message {
     margin: auto;
 
-    color: black;
+    color: white;
 
     width: 50%;
 
-    font-size: 72px;
+    font-size: 90px;
 
     border-bottom: 2px solid white;
 }
@@ -49,7 +49,7 @@
 }
 
 .Homepage-animated-text {
-    color: #EAF6FF;
+    color: #D8FFFF;
 }
 
 .Homepage-where-i-am-wrapper {

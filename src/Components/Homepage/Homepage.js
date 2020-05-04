@@ -28,7 +28,7 @@ class Homepage extends React.Component {
                     <div className="Homepage-description-wrapper">
                         <div className="Homepage-who-i-am-wrapper">
                             <h1>I am <TextLoop className="Homepage-animated-text" fade={true} mask={true} children={roles}
-                                interval={5000} adjustingSpeed={500} springConfig={{
+                                interval={4000} adjustingSpeed={750} springConfig={{
                                     stiffness: 300,
                                     damping: 30
                                 }}
@@ -37,7 +37,7 @@ class Homepage extends React.Component {
                         </div>
                         <div className="Homepage-where-i-am-wrapper">
                             <h1> at <TextLoop className="Homepage-animated-text" fade={true} mask={true} children={locations}
-                                interval={5000} adjustingSpeed={500} springConfig={{
+                                interval={4000} adjustingSpeed={750} springConfig={{
                                     stiffness: 300,
                                     damping: 30
                                 }}

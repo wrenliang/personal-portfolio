@@ -1,15 +1,19 @@
 .SkillCard {
     text-align: center;
-    border-radius: 10px;
-    background-color: blueviolet;
 
-    width: 90%;
+    width: 75%;
+
+    border: 1px solid #FEFDEA;
+    border-radius: 10px;
+
+    background-color: #54738E;
 }
 
 .SkillCard-title {
     text-align: center;
     margin-left: 0px;
     text-decoration: underline;
+    color: #FEFDEA;
 }
 
 .SkillCard-list {
@@ -21,19 +25,20 @@
     justify-content: space-evenly;
 
     list-style-type: none;
+
+    color: #FEFDEA;
 }
 
 .SkillCard-list li {
     font-size: 24px;
-    border: 1px solid black;
+    border-bottom: 0px solid #FEFDEA;
     margin-bottom: 5px;
-    border-radius: 5px;
 }
 
 .SkillCard-list-li-ios {
-    color: green;
+    color: #FFFC7A;
 }
 
 .SkillCard-list-li-web {
-    color: steelblue;
+    color: #C9FFFF;
 }
