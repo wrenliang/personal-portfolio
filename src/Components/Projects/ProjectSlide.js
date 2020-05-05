@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
+import { Image, Button } from 'react-bootstrap';
 
 // Dependant Components
 import TitleBlock from '../TitleBlock/TitleBlock';
@@ -20,7 +20,7 @@ class ProjectSlide extends React.Component {
         const githubIcon = global_mapIcon("github");
 
         return (
-            <div className="slide" style={{backgroundColor: `${this.props.bgColor}`}}>
+            <div className="slide" style={{backgroundColor: this.props.bgColor}}>
                 <div className="ProjectSlide-leftWrapper">
                     <TitleBlock title={this.props.title} description={this.props.descriptionShort}></TitleBlock>
                     <div className="ProjectSlide-left-spacer">
@@ -43,8 +43,7 @@ class ProjectSlide extends React.Component {
                     </div>
                 </div>
                 <div className="ProjectSlide-rightWrapper">
-                    <div className="ProjectSlide-img-container">
-                    </div>
+                    <img className="ProjectSlide-main-img" alt="Main Slide Background" src={this.props.bgImage}></img>
                 </div>
             </div>
         );

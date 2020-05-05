@@ -14,6 +14,9 @@ import './Projects.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import global_mapIcon from './MapIcon';
 
+//Images
+import PortfolioImage from '../../Assets/projects-personal-website.png';
+
 class Projects extends React.Component {
     render() {
         const githubIcon = global_mapIcon("github");
@@ -49,7 +52,7 @@ class Projects extends React.Component {
             icons: ["react", "javascript", "css"],
             github: "http://www.github.com",
             bgColor: "#088FDD",
-            imageURL: "LOCAL LINK TO IMAGE"
+            bgImage: PortfolioImage
         }
 
         const testSlide2 = {
@@ -59,7 +62,7 @@ class Projects extends React.Component {
             icons: ["swift", "python", "raspberry-pi"],
             github: "http://www.github.com",
             bgColor: "#FF3F47",
-            imageURL: "LOCAL LINK TO IMAGE"
+            bgImage: ""
         }
 
         return (
@@ -77,7 +80,7 @@ class Projects extends React.Component {
                         </div>
                     </div>
                     <div className="Projects-rightWrapper">
-                        <TitleBlock style={{width: "75%"}} title={'Projects'} description={"Here are some interesting things I've built."}></TitleBlock>
+                        <TitleBlock title={'Projects'} description={"Here's what I've been working in my spare time."}></TitleBlock>
                         <div className="Projects-github-main">
                             <img className="Projects-octocat" alt="GitHub Icon" src={require('../../Assets/mountietocat.png')}></img>
                             <br />
