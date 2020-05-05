@@ -24,25 +24,33 @@ class Projects extends React.Component {
         const keepfreshCard = {
             title: 'keepfresh',
             description: 'Full-stack iOS app for cooking sustainably, developed at UBC Launch Pad',
-            icons: ["swift", "javascript", "node"]
+            icons: ["swift", "javascript", "node"],
+            hoverColor: "#206030",
+            noHoverColor: "#50C878"
         }
 
         const jarvisCard = {
             title: 'Jarvis Robot',
             description: 'Autonomous line following robot that supports voice control and manual gyroscope driving mode',
-            icons: ["swift", "python", "raspberry-pi"]
+            icons: ["swift", "python", "raspberry-pi"],
+            hoverColor: "#AB8027",
+            noHoverColor: "#FFE856"
         }
 
         const portfolioCard = {
             title: 'Personal Website',
             description: 'Online portfolio for showcasing projects and experiences',
-            icons: ["react", "javascript", "css"]
+            icons: ["react", "javascript", "css"],
+            hoverColor: "#9B3A38",
+            noHoverColor: "#E17875"
         }
 
         const sproutsCard = {
             title: 'Sprouts',
             description: 'Plant-care reminders app built at nwHacks 2020',
-            icons: ["swift", "javascript", "node"]
+            icons: ["swift", "javascript", "node"],
+            hoverColor: "#254B81",
+            noHoverColor: "#4A8CC8"
         }
 
         const testSlide = {

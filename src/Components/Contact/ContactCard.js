@@ -22,20 +22,20 @@ class ContactCard extends React.Component {
                         <Image className="ContactCard-profile-pic" src={ProfilePic} roundedCircle></Image>
                         <div className="ContactCard-profile-text">
                             <h1 className="ContactCard-profile-name"> Wren Liang </h1>
-                            <h3> UBC | Computer Engineering | iOS Developer </h3>
+                            <h3 className= "ContactCard-profile-description"> UBC Computer Engineering </h3>
                         </div>
                     </div>
                     <div className="ContactCard-contact-buttons">
-                            <Button size="lg"> Email </Button>
-                            <Button size="lg"> LinkedIn </Button>
-                            <Button size="lg"> Phone </Button>
+                            <Button variant="success" size="lg"> Email </Button>
+                            <Button variant="success" size="lg"> LinkedIn </Button>
+                            <Button variant="success" size="lg"> Phone </Button>
                     </div>
                     
                 </div>
                 <div className="ContactCard-right">
-                    <Button variant="outline-dark">
+                    <Button variant="outline-light">
                         <FontAwesomeIcon icon={resumeIcon.img} size="10x"></FontAwesomeIcon>
-                        <h1>Here is my resume.</h1>
+                        <h3> <br/> Here's my resume.</h3>
                     </Button>
                 </div>
             </div>

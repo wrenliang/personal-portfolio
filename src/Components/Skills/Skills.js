@@ -13,7 +13,7 @@ class Skills extends React.Component {
             <div className="section" id="Skills">
                 <div className="Skills-leftWrapper">
                     <h1 className="Skills-title">Skills</h1>
-                    <h3 className="Skills-description">My strengths are in <span className="Skills-iOS-tag">iOS</span> and <span className="Skills-web-tag">Web</span> development</h3>
+                    <h3 className="Skills-description">My strengths are in <span className="Skills-iOS-tag">iOS</span> and <span className="Skills-web-tag">Web</span> development.</h3>
                 </div>
                 <div className="Skills-midWrapper">
                     <SkillCard title={'Languages'} skills={
