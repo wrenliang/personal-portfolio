@@ -5,7 +5,22 @@
     background-size: cover;
 }
 
-.Homepage-leftWrapper {
+#Homepage h1 {
+    color: #FEFEE7;
+}
+
+.Homepage-caption-wrapper {
+    position: absolute;
+
+    margin-right: 5px;
+
+    bottom: 0%;
+    right: 0%;
+    
+    color: #FEFEE7;
+}
+
+.Homepage-main-wrapper {
     float: left;
 
     width: 100vw;
@@ -16,21 +31,18 @@
     justify-content: center;
 }
 
-.Homepage-leftWrapper h1 {
+.Homepage-main-wrapper h1 {
     font-size: 48px;
-    color: white;
 }
 
 #Homepage-welcome-message {
     margin: auto;
 
-    color: white;
-
     width: 50%;
 
     font-size: 90px;
 
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid #FEFEE7;
 }
 
 .Homepage-description-wrapper {
@@ -57,21 +69,4 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
-
-.Homepage-rightWrapper {
-    float: left;
-
-    width: 40vw;
-    height: 100vh;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-
-}
-
-.Homepage-photo-caption {
-    margin-right: 16px;
-    text-align: right;
 }

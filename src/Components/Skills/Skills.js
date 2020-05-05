@@ -53,6 +53,11 @@ class Skills extends React.Component {
                     <SkillCard title={'Tools'} skills={
                         [
                             {
+                                key: "xcode",
+                                text: "Xcode",
+                                class: "SkillCard-list-li-ios"
+                            },
+                            {
                                 key: "git",
                                 text: "Git",
                                 class: "SkillCard-list-li-standard"
@@ -68,6 +73,11 @@ class Skills extends React.Component {
                 <div className="Skills-rightWrapper">
                     <SkillCard title={'Frameworks'} skills={
                         [
+                            {
+                                key: "junit",
+                                text: "JUnit",
+                                class: "SkillCard-list-li-standard"
+                            },
                             {
                                 key: "uikit",
                                 text: "UIKit",
@@ -92,11 +102,6 @@ class Skills extends React.Component {
                                 key: "node",
                                 text: "Node.js & Express.js",
                                 class: "SkillCard-list-li-web"
-                            },
-                            {
-                                key: "junit",
-                                text: "JUnit",
-                                class: "SkillCard-list-li-standard"
                             }
                         ]
                         }>

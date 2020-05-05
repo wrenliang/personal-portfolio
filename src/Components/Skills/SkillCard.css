@@ -3,7 +3,7 @@
 
     width: 75%;
 
-    border: 1px solid #FEFDEA;
+    border: 1px solid #FEFEE7;
     border-radius: 10px;
 
     background-color: #54738E;
@@ -13,7 +13,7 @@
     text-align: center;
     margin-left: 0px;
     text-decoration: underline;
-    color: #FEFDEA;
+    color: #FEFEE7;
 }
 
 .SkillCard-list {
@@ -26,12 +26,12 @@
 
     list-style-type: none;
 
-    color: #FEFDEA;
+    color: #FEFEE7;
 }
 
 .SkillCard-list li {
     font-size: 24px;
-    border-bottom: 0px solid #FEFDEA;
+    border-bottom: 0px solid #FEFEE7;
     margin-bottom: 5px;
 }
 

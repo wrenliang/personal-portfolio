@@ -1,6 +1,14 @@
 #Projects {
     text-align: center;
-    background-color: lightcyan;
+    background-color: #CD5C5C;
+}
+
+#Projects h1 {
+    color: #FEFEE7;
+}
+
+#Projects p {
+    color: #FEFEE7;
 }
 
 .Projects-leftWrapper {
@@ -13,7 +21,6 @@
     flex-direction: column;
     justify-content: center;
 
-    background-color: royalblue;
 }
 
 .Projects-cardRow {
@@ -36,7 +43,6 @@
     flex-direction: column;
     justify-content: space-evenly;
 
-    background-color: cornflowerblue;
 }
 
 .Projects-octocat {
@@ -44,7 +50,8 @@
     height: 200px;
 }
 
-.btn-outline-danger {
+.Projects-rightWrapper .btn-danger {
+    color: #FEFEE7;
 }
 
 .fp-controlArrow {

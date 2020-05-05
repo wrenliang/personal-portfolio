@@ -77,11 +77,11 @@ class Projects extends React.Component {
                         </div>
                     </div>
                     <div className="Projects-rightWrapper">
-                        <TitleBlock title={'Projects'} description={'This is the projects page'}></TitleBlock>
+                        <TitleBlock style={{width: "75%"}} title={'Projects'} description={"Here are some interesting things I've built."}></TitleBlock>
                         <div className="Projects-github-main">
                             <img className="Projects-octocat" alt="GitHub Icon" src={require('../../Assets/mountietocat.png')}></img>
                             <br />
-                            <Button variant="outline-danger" size="lg">
+                            <Button variant="danger" size="lg">
                                 <FontAwesomeIcon icon={githubIcon.img} size="1x"/> View on GitHub
                             </Button>
                         </div>

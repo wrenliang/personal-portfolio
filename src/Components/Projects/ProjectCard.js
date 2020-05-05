@@ -32,7 +32,7 @@ class ProjectCard extends React.Component {
 
         if (this.state.isHovered) {
             const hoverStyle = {
-                backgroundColor: "grey"
+                backgroundColor: "#842E2E"
             }
 
             return (
@@ -52,7 +52,8 @@ class ProjectCard extends React.Component {
             );
         } else {
             const noHoverStyle = {
-                backgroundColor: "crimson"
+                backgroundImage: "none",
+                backgroundColor: "#BE5353"
             }
             return (
                 <div className="ProjectCard" onMouseEnter={this.toggleHover} onMouseLeave={this.toggleHover}

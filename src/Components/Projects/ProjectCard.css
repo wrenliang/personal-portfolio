@@ -13,6 +13,9 @@
     justify-content: space-around;
     transition-duration: 0.3s;
 
+    background-image: url("../../Assets/login-bottom.png");
+    background-size: cover;
+
     cursor: pointer;
 }
 

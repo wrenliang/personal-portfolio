@@ -21,7 +21,7 @@ class Homepage extends React.Component {
 
         return (
             <div className="section" id="Homepage">
-                <div className="Homepage-leftWrapper">
+                <div className="Homepage-main-wrapper">
                     <div className="Homepage-welcome-message-wrapper">
                         <h1 id="Homepage-welcome-message"> Wren Liang </h1>
                     </div>
@@ -47,16 +47,13 @@ class Homepage extends React.Component {
                         </div>
                     </div>
                 </div>
-                {/* <div className="Homepage-rightWrapper">
-                
-                    <div className="Homepage-photo-caption">
-                        <p>
-                            Photo Caption <br/>
-                            This is my picture <br/>
-                            From South Africa
-                        </p>
-                    </div>
-                </div> */}
+                <div className="Homepage-caption-wrapper">
+                    <p className="Homepage-caption">
+                        Kananaskis Country <br/>
+                        Alberta, Canada <br/>
+                        © 2019 Noah Edwards & Wren Liang 
+                    </p>
+                </div>
             </div>
         );
     }
