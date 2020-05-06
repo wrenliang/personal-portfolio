@@ -16,6 +16,8 @@ import global_mapIcon from './MapIcon';
 
 //Images
 import PortfolioImage from '../../Assets/projects-personal-website.png';
+import SproutsImage from '../../Assets/projects-sprouts.png';
+import KeepfreshImage from '../../Assets/projects-keepfresh.png';
 
 class Projects extends React.Component {
     render() {
@@ -39,7 +41,7 @@ class Projects extends React.Component {
 
         const portfolioCard = {
             title: 'Personal Website',
-            description: 'Online portfolio for showcasing projects and experiences',
+            description: 'Online portfolio site for projects and experiences',
             icons: ["react", "javascript", "css"],
             hoverColor: "#9B3A38",
             noHoverColor: "#E17875"
@@ -47,29 +49,49 @@ class Projects extends React.Component {
 
         const sproutsCard = {
             title: 'Sprouts',
-            description: 'Plant-care reminders app built at nwHacks 2020',
+            description: 'Plant care reminders app for iOS, built at nwHacks 2020',
             icons: ["swift", "javascript", "node"],
             hoverColor: "#254B81",
             noHoverColor: "#4A8CC8"
         }
 
-        const testSlide = {
+        const portfolioSlide = {
             title: "Personal Website",
-            descriptionShort: "Online portfolio built using React, Bootstrap, and CSS",
+            descriptionShort: "Online portfolio site for projects and experiences",
             descriptionLong: "//FILLER TEXT STILL HAVE NOT WRITTEN OUT YET",
             icons: ["react", "javascript", "css"],
             github: "http://www.github.com",
-            bgColor: "#088FDD",
+            bgColor: "#9B3A38",
             bgImage: PortfolioImage
         }
 
-        const testSlide2 = {
+        const sproutsSlide = {
+            title: "Sprouts",
+            descriptionShort: "Plant care reminders app for iOS, built at nwHacks 2020",
+            descriptionLong: "//FILLER TEXT STILL HAVE NOT WRITTEN OUT YET",
+            icons: ["swift", "javascript", "node"],
+            github: "http://www.github.com",
+            bgColor: "#4A8CC8",
+            bgImage: SproutsImage
+        }
+
+        const keepfreshSlide = {
+            title: "keepfresh",
+            descriptionShort: "Full-stack iOS app to make cooking sustainably easy",
+            descriptionLong: "//FILLER TEXT STILL HAVE NOT WRITTEN OUT YET",
+            icons: ["swift", "javascript", "node"],
+            github: "http://www.github.com",
+            bgColor: "#50C878",
+            bgImage: KeepfreshImage
+        }
+
+        const jarvisSlide = {
             title: "Jarvis Robot",
             descriptionShort: "Basically Iron Man lol",
             descriptionLong: "//FILLER TEXT STILL HAVE NOT WRITTEN OUT YET",
             icons: ["swift", "python", "raspberry-pi"],
             github: "http://www.github.com",
-            bgColor: "#FF3F47",
+            bgColor: "#AB8027",
             bgImage: ""
         }
 
@@ -88,7 +110,7 @@ class Projects extends React.Component {
                         </div>
                     </div>
                     <div className="Projects-rightWrapper">
-                        <TitleBlock title={'Projects'} description={"Here's what I've been working in my spare time."}></TitleBlock>
+                        <TitleBlock title={'Projects'} description={"Here's what I've been working on."}></TitleBlock>
                         <div className="Projects-github-main">
                             <img className="Projects-octocat" alt="GitHub Icon" src={require('../../Assets/mountietocat.png')}></img>
                             <br />
@@ -98,8 +120,10 @@ class Projects extends React.Component {
                         </div>
                     </div>
                 </div>
-                <ProjectSlide {... testSlide}></ProjectSlide>
-                <ProjectSlide {... testSlide2}></ProjectSlide>
+                <ProjectSlide {... portfolioSlide}></ProjectSlide>
+                <ProjectSlide {... sproutsSlide}></ProjectSlide>
+                <ProjectSlide {... keepfreshSlide}></ProjectSlide>
+                <ProjectSlide {... jarvisSlide}></ProjectSlide>
             </div>
         )
     }

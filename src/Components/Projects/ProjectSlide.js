@@ -30,9 +30,9 @@ class ProjectSlide extends React.Component {
                         </p>
                         <div className="ProjectSlide-icon-list">
                             <div className="ProjectSlide-icon-list-left">
-                                <FontAwesomeIcon icon={icons[0].img} size="4x"/>
-                                <FontAwesomeIcon icon={icons[1].img} size="4x"/>
-                                <FontAwesomeIcon icon={icons[2].img} size="4x"/>
+                                <FontAwesomeIcon icon={icons[0].img} color={icons[0].color} size="4x"/>
+                                <FontAwesomeIcon icon={icons[1].img} color={icons[1].color} size="4x"/>
+                                <FontAwesomeIcon icon={icons[2].img} color={icons[2].color} size="4x"/>
                             </div>
                             <div className="ProjectSlide-icon-list-right">
                                 <Button variant="outline-dark" size="lg"> 
