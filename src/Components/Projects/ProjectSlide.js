@@ -42,8 +42,6 @@ class ProjectSlide extends React.Component {
             <div className="slide" style={{backgroundColor: this.props.bgColor}}>
                 <div className="ProjectSlide-leftWrapper">
                     <TitleBlock title={this.props.title} description={this.props.descriptionShort}></TitleBlock>
-                    <div className="ProjectSlide-left-spacer">
-                    </div>
                     <div className="ProjectSlide-description-box">
                         <p className="ProjectSlide-extended-description"> {descriptions}
                         </p>

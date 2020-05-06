@@ -23,28 +23,13 @@ class Projects extends React.Component {
     render() {
         const githubIcon = global_mapIcon("github");
 
+        // Card Data Models
         const keepfreshCard = {
             title: 'keepfresh',
             description: 'Full-stack iOS app for cooking sustainably, developed at UBC Launch Pad',
             icons: ["swift", "javascript", "node"],
             hoverColor: "#206030",
             noHoverColor: "#50C878"
-        }
-
-        const jarvisCard = {
-            title: 'Jarvis Robot',
-            description: 'Autonomous line following robot that supports voice control and manual gyroscope driving mode',
-            icons: ["swift", "python", "raspberry-pi"],
-            hoverColor: "#AB8027",
-            noHoverColor: "#FFE856"
-        }
-
-        const portfolioCard = {
-            title: 'Personal Website',
-            description: 'Online portfolio site for projects and experiences',
-            icons: ["react", "bootstrap", "css"],
-            hoverColor: "#9B3A38",
-            noHoverColor: "#E17875"
         }
 
         const sproutsCard = {
@@ -55,22 +40,36 @@ class Projects extends React.Component {
             noHoverColor: "#4A8CC8"
         }
 
-        const portfolioSlide = {
-            title: "Personal Website",
-            descriptionShort: "Online portfolio site for projects and experiences",
+        const portfolioCard = {
+            title: 'Personal Website',
+            description: 'Online portfolio site for projects and experiences',
+            icons: ["react", "bootstrap", "css"],
+            hoverColor: "#9B3A38",
+            noHoverColor: "#E17875"
+        }
+
+        const jarvisCard = {
+            title: 'Jarvis Robot',
+            description: 'Autonomous line following robot that supports voice control and manual gyroscope driving mode',
+            icons: ["swift", "python", "raspberry-pi"],
+            hoverColor: "#AB8027",
+            noHoverColor: "#FFE856"
+        }
+
+
+        // Slide Data Models
+        const keepfreshSlide = {
+            title: "keepfresh",
+            descriptionShort: "Full-stack iOS app to make cooking sustainably easy",
             descriptionLong: {
                 sections: [
                     {
                         title: "Title",
                         content: "content"
-                    },
-                    {
-                        title: "Title 2",
-                        content: "content 2"
                     }
                 ]
             },
-            icons: ["react", "bootstrap", "css"],
+            icons: ["swift", "javascript", "node"],
             buttons: [
                 {
                     title: "GitHub Repo",
@@ -78,8 +77,8 @@ class Projects extends React.Component {
                     link: "http://www.github.com"
                 }
             ],
-            bgColor: "#9B3A38",
-            bgImage: PortfolioImage
+            bgColor: "#50C878",
+            bgImage: KeepfreshImage
         }
 
         const sproutsSlide = {
@@ -109,18 +108,22 @@ class Projects extends React.Component {
             bgImage: SproutsImage
         }
 
-        const keepfreshSlide = {
-            title: "keepfresh",
-            descriptionShort: "Full-stack iOS app to make cooking sustainably easy",
+        const portfolioSlide = {
+            title: "Personal Website",
+            descriptionShort: "Online portfolio site for projects and experiences",
             descriptionLong: {
                 sections: [
                     {
                         title: "Title",
                         content: "content"
+                    },
+                    {
+                        title: "Title 2",
+                        content: "content 2"
                     }
                 ]
             },
-            icons: ["swift", "javascript", "node"],
+            icons: ["react", "bootstrap", "css"],
             buttons: [
                 {
                     title: "GitHub Repo",
@@ -128,8 +131,8 @@ class Projects extends React.Component {
                     link: "http://www.github.com"
                 }
             ],
-            bgColor: "#50C878",
-            bgImage: KeepfreshImage
+            bgColor: "#9B3A38",
+            bgImage: PortfolioImage
         }
 
         const jarvisSlide = {
@@ -161,12 +164,12 @@ class Projects extends React.Component {
                     <div className="Projects-leftWrapper">
                         <div className="Projects-cardRow">
                             <ProjectCard {... keepfreshCard} />
-                            <ProjectCard {... jarvisCard} />
+                            <ProjectCard {... sproutsCard} />
                         </div>
                         <h1 className="Projects-highlights-label">Some highlights</h1>
                         <div className="Projects-cardRow">
                             <ProjectCard {... portfolioCard} />
-                            <ProjectCard {... sproutsCard} />
+                            <ProjectCard {... jarvisCard} />
                         </div>
                     </div>
                     <div className="Projects-rightWrapper">
@@ -180,9 +183,9 @@ class Projects extends React.Component {
                         </div>
                     </div>
                 </div>
-                <ProjectSlide {... portfolioSlide}></ProjectSlide>
-                <ProjectSlide {... sproutsSlide}></ProjectSlide>
                 <ProjectSlide {... keepfreshSlide}></ProjectSlide>
+                <ProjectSlide {... sproutsSlide}></ProjectSlide>
+                <ProjectSlide {... portfolioSlide}></ProjectSlide>
                 <ProjectSlide {... jarvisSlide}></ProjectSlide>
             </div>
         )

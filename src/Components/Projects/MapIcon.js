@@ -1,6 +1,6 @@
 // Font Awesome
-import { faBootstrap, faGithub, faSwift, faJava, faPython, faCss3Alt, faHtml5, faJsSquare, faReact, faNode, faRaspberryPi} from '@fortawesome/free-brands-svg-icons';
-import { faLaptopCode, faTerminal, faCoffee ,faFileAlt } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedin, faBootstrap, faGithub, faSwift, faJava, faPython, faCss3Alt, faHtml5, faJsSquare, faReact, faNode, faRaspberryPi} from '@fortawesome/free-brands-svg-icons';
+import { faMobile, faInbox ,faLaptopCode, faTerminal, faCoffee ,faFileAlt } from '@fortawesome/free-solid-svg-icons';
 
 const global_mapIcon = (name) => {
     var icon = {
@@ -49,6 +49,12 @@ const global_mapIcon = (name) => {
         icon.img = faLaptopCode;
     } else if (name === "resume") {
         icon.img = faFileAlt;
+    } else if (name === "email") {
+        icon.img = faInbox;
+    } else if (name === "linkedin") {
+        icon.img = faLinkedin;
+    } else if (name === "phone") {
+        icon.img = faMobile;
     }
 
     return icon;

@@ -15,6 +15,10 @@ import global_mapIcon from '../Projects/MapIcon';
 class ContactCard extends React.Component {
     render() {
         const resumeIcon = global_mapIcon("resume");
+        const emailIcon = global_mapIcon("email");
+        const linkedInIcon = global_mapIcon("linkedin");
+        const phoneIcon = global_mapIcon("phone");
+
         return (
             <div className="ContactCard">
                 <div className="ContactCard-left">
@@ -26,9 +30,18 @@ class ContactCard extends React.Component {
                         </div>
                     </div>
                     <div className="ContactCard-contact-buttons">
-                            <Button variant="success" size="lg"> Email </Button>
-                            <Button variant="success" size="lg"> LinkedIn </Button>
-                            <Button variant="success" size="lg"> Phone </Button>
+                            <Button variant="success" size="lg">
+                                <FontAwesomeIcon icon={emailIcon.img} size="1x"></FontAwesomeIcon>
+                                {` Email`}
+                            </Button>
+                            <Button variant="success" size="lg">
+                                <FontAwesomeIcon icon={linkedInIcon.img} size="1x"></FontAwesomeIcon>
+                                {` LinkedIn`}
+                            </Button>
+                            <Button variant="success" size="lg">
+                                <FontAwesomeIcon icon={phoneIcon.img} size="1x"></FontAwesomeIcon>
+                                {` Phone`}
+                            </Button>
                     </div>
                     
                 </div>

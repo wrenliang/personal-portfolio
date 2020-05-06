@@ -20,7 +20,7 @@ class Skills extends React.Component {
                         [
                             {
                                 key: "cplusplus",
-                                text: "C/C++",
+                                text: "C & C++",
                                 class: "SkillCard-list-li-standard"
                             },
                             {
