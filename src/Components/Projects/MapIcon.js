@@ -1,6 +1,6 @@
 // Font Awesome
-import { faGithub, faSwift, faJava, faPython, faCss3Alt, faHtml5, faJsSquare, faReact, faNode, faRaspberryPi} from '@fortawesome/free-brands-svg-icons';
-import { faFileAlt } from '@fortawesome/free-solid-svg-icons';
+import { faBootstrap, faGithub, faSwift, faJava, faPython, faCss3Alt, faHtml5, faJsSquare, faReact, faNode, faRaspberryPi} from '@fortawesome/free-brands-svg-icons';
+import { faLaptopCode, faTerminal, faCoffee ,faFileAlt } from '@fortawesome/free-solid-svg-icons';
 
 const global_mapIcon = (name) => {
     var icon = {
@@ -29,14 +29,24 @@ const global_mapIcon = (name) => {
     } else if (name === "react") {
         icon.img = faReact;
         icon.color = "#62D5FB";
+    } else if (name === "bootstrap") {
+        icon.img = faBootstrap;
+        icon.color = "#8806CE";
     } else if (name === "node") {
         icon.img = faNode;
         icon.color = "#84AF35";
     } else if (name === "raspberry-pi") {
         icon.img = faRaspberryPi;
         icon.color = "#A72842";
+    } else if (name === "coffee") {
+        icon.img = faCoffee;
+        icon.color = "#7B3F00";
     } else if (name === "github") {
         icon.img = faGithub;
+    } else if (name === "terminal") {
+        icon.img = faTerminal;
+    } else if (name === "laptop-code") {
+        icon.img = faLaptopCode;
     } else if (name === "resume") {
         icon.img = faFileAlt;
     }

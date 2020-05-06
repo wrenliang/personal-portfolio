@@ -17,7 +17,26 @@ class ProjectSlide extends React.Component {
         for (const name of this.props.icons) {
             icons.push(global_mapIcon(name));
         }
-        const githubIcon = global_mapIcon("github");
+
+        const buttons = this.props.buttons.map( (button) => {
+            const icon = global_mapIcon(button.iconName);
+            return (
+                <Button variant="outline-dark" size="lg"> 
+                <FontAwesomeIcon icon={icon.img} size="1x"/> 
+                {` ${button.title}`}
+                </Button>
+            )
+        });
+
+        const descriptions = this.props.descriptionLong.sections.map( (section) => {
+            return (
+                <div className="ProjectSlide-description-section">
+                    <h4>{section.title}</h4>
+                    <p>{section.content}</p>
+                </div>
+            );
+        });
+
 
         return (
             <div className="slide" style={{backgroundColor: this.props.bgColor}}>
@@ -26,7 +45,7 @@ class ProjectSlide extends React.Component {
                     <div className="ProjectSlide-left-spacer">
                     </div>
                     <div className="ProjectSlide-description-box">
-                        <p className="ProjectSlide-extended-description"> {this.props.descriptionLong}
+                        <p className="ProjectSlide-extended-description"> {descriptions}
                         </p>
                         <div className="ProjectSlide-icon-list">
                             <div className="ProjectSlide-icon-list-left">
@@ -35,9 +54,7 @@ class ProjectSlide extends React.Component {
                                 <FontAwesomeIcon icon={icons[2].img} color={icons[2].color} size="4x"/>
                             </div>
                             <div className="ProjectSlide-icon-list-right">
-                                <Button variant="outline-dark" size="lg"> 
-                                <FontAwesomeIcon icon={githubIcon.img} size="1x"/> Source code
-                                </Button>
+                                {buttons}
                             </div>
                         </div>
                     </div>

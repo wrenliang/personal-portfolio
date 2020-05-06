@@ -42,7 +42,7 @@ class Projects extends React.Component {
         const portfolioCard = {
             title: 'Personal Website',
             description: 'Online portfolio site for projects and experiences',
-            icons: ["react", "javascript", "css"],
+            icons: ["react", "bootstrap", "css"],
             hoverColor: "#9B3A38",
             noHoverColor: "#E17875"
         }
@@ -58,9 +58,26 @@ class Projects extends React.Component {
         const portfolioSlide = {
             title: "Personal Website",
             descriptionShort: "Online portfolio site for projects and experiences",
-            descriptionLong: "//FILLER TEXT STILL HAVE NOT WRITTEN OUT YET",
-            icons: ["react", "javascript", "css"],
-            github: "http://www.github.com",
+            descriptionLong: {
+                sections: [
+                    {
+                        title: "Title",
+                        content: "content"
+                    },
+                    {
+                        title: "Title 2",
+                        content: "content 2"
+                    }
+                ]
+            },
+            icons: ["react", "bootstrap", "css"],
+            buttons: [
+                {
+                    title: "GitHub Repo",
+                    iconName: "github",
+                    link: "http://www.github.com"
+                }
+            ],
             bgColor: "#9B3A38",
             bgImage: PortfolioImage
         }
@@ -68,9 +85,26 @@ class Projects extends React.Component {
         const sproutsSlide = {
             title: "Sprouts",
             descriptionShort: "Plant care reminders app for iOS, built at nwHacks 2020",
-            descriptionLong: "//FILLER TEXT STILL HAVE NOT WRITTEN OUT YET",
+            descriptionLong: {
+                sections: [
+                    {
+                        title: "Title",
+                        content: "content"
+                    }
+                ]
+            },
             icons: ["swift", "javascript", "node"],
-            github: "http://www.github.com",
+            buttons: [
+                {
+                    title: "GitHub Repo",
+                    iconName: "github",
+                    link: "http://www.github.com"
+                }, {
+                    title: "Devpost",
+                    iconName: "laptop-code",
+                    link: "http://www.github.com"
+                }
+            ],
             bgColor: "#4A8CC8",
             bgImage: SproutsImage
         }
@@ -78,9 +112,22 @@ class Projects extends React.Component {
         const keepfreshSlide = {
             title: "keepfresh",
             descriptionShort: "Full-stack iOS app to make cooking sustainably easy",
-            descriptionLong: "//FILLER TEXT STILL HAVE NOT WRITTEN OUT YET",
+            descriptionLong: {
+                sections: [
+                    {
+                        title: "Title",
+                        content: "content"
+                    }
+                ]
+            },
             icons: ["swift", "javascript", "node"],
-            github: "http://www.github.com",
+            buttons: [
+                {
+                    title: "GitHub Repo",
+                    iconName: "github",
+                    link: "http://www.github.com"
+                }
+            ],
             bgColor: "#50C878",
             bgImage: KeepfreshImage
         }
@@ -88,9 +135,22 @@ class Projects extends React.Component {
         const jarvisSlide = {
             title: "Jarvis Robot",
             descriptionShort: "Basically Iron Man lol",
-            descriptionLong: "//FILLER TEXT STILL HAVE NOT WRITTEN OUT YET",
+            descriptionLong: {
+                sections: [
+                    {
+                        title: "Title",
+                        content: "content"
+                    }
+                ]
+            },
             icons: ["swift", "python", "raspberry-pi"],
-            github: "http://www.github.com",
+            buttons: [
+                {
+                    title: "GitHub Repo",
+                    iconName: "github",
+                    link: "http://www.github.com"
+                }
+            ],
             bgColor: "#AB8027",
             bgImage: ""
         }
@@ -115,7 +175,7 @@ class Projects extends React.Component {
                             <img className="Projects-octocat" alt="GitHub Icon" src={require('../../Assets/mountietocat.png')}></img>
                             <br />
                             <Button variant="danger" size="lg">
-                                <FontAwesomeIcon icon={githubIcon.img} size="1x"/> View on GitHub
+                                <FontAwesomeIcon icon={githubIcon.img} size="1x"/> GitHub Profile
                             </Button>
                         </div>
                     </div>
