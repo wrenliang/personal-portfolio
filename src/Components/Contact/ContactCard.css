@@ -30,11 +30,11 @@
 
 .ContactCard-profile-name {
     font-size: 60px;
-    color: white;
+    color: #FEFEE7;
 }
 
 .ContactCard-profile-description {
-    color: white;
+    color: #FEFEE7;
 }
 
 .ContactCard-contact-buttons {
@@ -44,6 +44,10 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-content: space-evenly;
+}
+
+.ContactCard-contact-buttons .btn-dark {
+    color: #FEFEE7;
 }
 
 .ContactCard-contact-buttons Button {
@@ -62,9 +66,11 @@
 }
 
 .ContactCard-right .btn-outline-light {
+    color: #FEFEE7;
     border-width: 0px;
 }
 
 .ContactCard-right .btn-outline-light:hover {
+    color: #222529;
     background-color: transparent;
 }

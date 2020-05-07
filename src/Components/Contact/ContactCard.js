@@ -35,17 +35,19 @@ class ContactCard extends React.Component {
                     <div className="ContactCard-contact-buttons">
                             <Button onClick={ () => {
                                 window.location.href = `mailto:${email}`;
-                            }} variant="success" size="lg">
+                            }} variant="dark" size="lg">
                                 <FontAwesomeIcon icon={emailIcon.img} size="1x"></FontAwesomeIcon>
                                 {` Email`}
                             </Button>
                             <Button onClick={ () => {
                                 window.open('https://www.linkedin.com/in/wren-liang/', '_blank');
-                            }} variant="success" size="lg">
+                            }} variant="dark" size="lg">
                                 <FontAwesomeIcon icon={linkedInIcon.img} size="1x"></FontAwesomeIcon>
                                 {` LinkedIn`}
                             </Button>
-                            <Button variant="success" size="lg">
+                            <Button onClick={ () => {
+                                window.open('https://github.com/wrenliang', '_blank');
+                            }} variant="dark" size="lg">
                                 <FontAwesomeIcon icon={githubIcon.img} size="1x"></FontAwesomeIcon>
                                 {` GitHub`}
                             </Button>

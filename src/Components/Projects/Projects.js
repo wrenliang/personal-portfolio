@@ -18,6 +18,7 @@ import global_mapIcon from './MapIcon';
 import PortfolioImage from '../../Assets/projects-personal-website.png';
 import SproutsImage from '../../Assets/projects-sprouts.png';
 import KeepfreshImage from '../../Assets/projects-keepfresh.png';
+import JarvisImage from '../../Assets/jarvis-robot.png';
 
 class Projects extends React.Component {
     render() {
@@ -128,16 +129,16 @@ class Projects extends React.Component {
 
         const portfolioSlide = {
             title: "Personal Website",
-            descriptionShort: "Online portfolio site for projects and experiences",
+            descriptionShort: "Online portfolio for personal projects",
             descriptionLong: {
                 sections: [
                     {
-                        title: "Title",
-                        contents: ["content"]
+                        title: "Background",
+                        contents: ["I created my website to display the projects I was working on and the skills I had gained. However, in addition to accompanying my resume, my online portfolio has also allowed me to practice developing and maintaining websites using modern web technologies. For example, in a recent update, I completely remade my old HTML/CSS/JS website into the current version using JavaScript ES6 and the React.js framework."]
                     },
                     {
-                        title: "Title 2",
-                        contents: ["content 2"]
+                        title: "Technologies Used",
+                        contents: ["JavaScript ES6, React.js, React-Bootstrap, fullPage.js, HTML/CSS"]
                     }
                 ]
             },
@@ -149,22 +150,25 @@ class Projects extends React.Component {
                     link: "https://github.com/wrenliang/personal-portfolio"
                 }
             ],
-            bgColor: "#9B3A38",
+            bgColor: "#E26363",
             bgImage: PortfolioImage
         }
 
         const jarvisSlide = {
             title: "Jarvis Robot",
-            descriptionShort: "Basically Iron Man lol",
+            descriptionShort: "",
             descriptionLong: {
                 sections: [
                     {
-                        title: "Title",
-                        contents: ["content"]
+                        title: "Features",
+                        contents: [
+                            "This robot started off life as an assignment in one of our CPEN project courses. However, our team was energized by what we were building, so we decided to add many additional features to our robot, taking inspiration from the Iron Man movies.",
+                            "The accompanying iPad app we built includes a voice recognition assistant (hence the name Jarvis) that executes verbal commands. For example, in addition to the standard autonomous line following mode, you can activate a (very entertaining) manual drive mode using the iPad gyroscopes by simply saying “Jarvis, give me control.” While driving, the robot sends a live camera feed to the iPad to assist with navigation."
+                        ]
                     },
                     {
-                        title: "Title 2",
-                        contents: ["content 2"]
+                        title: "Technologies Used",
+                        contents: ["Swift, Apple Speech Framework, Python, MQTT Network Protocol, Raspberry Pi, Soldering"]
                     }
                 ]
             },
@@ -176,8 +180,8 @@ class Projects extends React.Component {
                     link: ""
                 }
             ],
-            bgColor: "#AB8027",
-            bgImage: ""
+            bgColor: "#F4C430",
+            bgImage: JarvisImage
         }
 
         return (
