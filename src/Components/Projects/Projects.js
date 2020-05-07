@@ -27,9 +27,10 @@ class Projects extends React.Component {
         const keepfreshCard = {
             title: 'keepfresh',
             description: 'Full-stack iOS app for cooking sustainably, developed at UBC Launch Pad',
-            icons: ["swift", "javascript", "node"],
+            icons: ["swift", "node", "server"],
             hoverColor: "#206030",
-            noHoverColor: "#50C878"
+            noHoverColor: "#50C878",
+            slideNo: 1
         }
 
         const sproutsCard = {
@@ -37,7 +38,8 @@ class Projects extends React.Component {
             description: 'Plant care reminders app for iOS, built at nwHacks 2020',
             icons: ["swift", "javascript", "node"],
             hoverColor: "#254B81",
-            noHoverColor: "#4A8CC8"
+            noHoverColor: "#4A8CC8",
+            slideNo: 2
         }
 
         const portfolioCard = {
@@ -45,7 +47,8 @@ class Projects extends React.Component {
             description: 'Online portfolio site for projects and experiences',
             icons: ["react", "bootstrap", "css"],
             hoverColor: "#9B3A38",
-            noHoverColor: "#E17875"
+            noHoverColor: "#E17875",
+            slideNo: 3
         }
 
         const jarvisCard = {
@@ -53,28 +56,36 @@ class Projects extends React.Component {
             description: 'Autonomous line following robot that supports voice control and manual gyroscope driving mode',
             icons: ["swift", "python", "raspberry-pi"],
             hoverColor: "#AB8027",
-            noHoverColor: "#FFE856"
+            noHoverColor: "#FFE856",
+            slideNo: 4
         }
 
 
         // Slide Data Models
         const keepfreshSlide = {
             title: "keepfresh",
-            descriptionShort: "Full-stack iOS app to make cooking sustainably easy",
+            descriptionShort: "Full-stack iOS app to facilitate sustainable cooking",
             descriptionLong: {
                 sections: [
                     {
-                        title: "Title",
-                        content: "content"
+                        title: "Background",
+                        contents: ["keepfresh is an iOS app I built with my team at UBC Launch Pad, a student-run software engineering team devoted to building projects in a collaborative, professional environment. The goal was to create an app that allows users to track the food in their homes, see when items were expiring, and recommend recipes based on their inventory."]
+                    }, {
+                        title: "Technologies Used",
+                        contents: [
+                            "Design: Sketch, InVision, Figma",
+                            "Front-end: Swift",
+                            "Back-end: TypeScript, Node.js & Express.js, MongoDB Atlas, PostgreSQL"
+                        ]
                     }
                 ]
             },
-            icons: ["swift", "javascript", "node"],
+            icons: ["swift", "node", "server"],
             buttons: [
                 {
                     title: "GitHub Repo",
                     iconName: "github",
-                    link: "http://www.github.com"
+                    link: "https://github.com/ubclaunchpad/food-doods/tree/showcase"
                 }
             ],
             bgColor: "#50C878",
@@ -87,8 +98,15 @@ class Projects extends React.Component {
             descriptionLong: {
                 sections: [
                     {
-                        title: "Title",
-                        content: "content"
+                        title: "Inspiration",
+                        contents: ["Interaction with indoor plants can reduce various forms of stress, based on previous psychological and neurological studies. Additionally, many people face the common issue of either forgetting to water their plants, or not knowing how to care for them properly. By making a terrarium-like app, our goal at nwHacks 2020 was to create a fun way for users to learn how to take care of plants and relieve their stress levels."]
+                    }, {
+                        title: "Technologies Used",
+                        contents: [
+                            "Design: Sketch, InVision",
+                            "Front-end: Swift",
+                            "Back-end: JavaScript, Node.js & Express.js, MongoDB Atlas"
+                        ]
                     }
                 ]
             },
@@ -97,11 +115,11 @@ class Projects extends React.Component {
                 {
                     title: "GitHub Repo",
                     iconName: "github",
-                    link: "http://www.github.com"
+                    link: "https://github.com/yan-alan/nwHacks2020-Sprouts"
                 }, {
                     title: "Devpost",
                     iconName: "laptop-code",
-                    link: "http://www.github.com"
+                    link: "https://devpost.com/software/sprouts-7b83a1"
                 }
             ],
             bgColor: "#4A8CC8",
@@ -115,11 +133,11 @@ class Projects extends React.Component {
                 sections: [
                     {
                         title: "Title",
-                        content: "content"
+                        contents: ["content"]
                     },
                     {
                         title: "Title 2",
-                        content: "content 2"
+                        contents: ["content 2"]
                     }
                 ]
             },
@@ -128,7 +146,7 @@ class Projects extends React.Component {
                 {
                     title: "GitHub Repo",
                     iconName: "github",
-                    link: "http://www.github.com"
+                    link: "https://github.com/wrenliang/personal-portfolio"
                 }
             ],
             bgColor: "#9B3A38",
@@ -142,16 +160,20 @@ class Projects extends React.Component {
                 sections: [
                     {
                         title: "Title",
-                        content: "content"
+                        contents: ["content"]
+                    },
+                    {
+                        title: "Title 2",
+                        contents: ["content 2"]
                     }
                 ]
             },
             icons: ["swift", "python", "raspberry-pi"],
             buttons: [
                 {
-                    title: "GitHub Repo",
-                    iconName: "github",
-                    link: "http://www.github.com"
+                    title: "Private project",
+                    iconName: "private",
+                    link: ""
                 }
             ],
             bgColor: "#AB8027",
@@ -177,8 +199,11 @@ class Projects extends React.Component {
                         <div className="Projects-github-main">
                             <img className="Projects-octocat" alt="GitHub Icon" src={require('../../Assets/mountietocat.png')}></img>
                             <br />
-                            <Button variant="danger" size="lg">
-                                <FontAwesomeIcon icon={githubIcon.img} size="1x"/> GitHub Profile
+
+                            <Button onClick={ () => {
+                                window.open('https://github.com/wrenliang', '_blank');
+                            }} variant="danger" size="lg">
+                                <FontAwesomeIcon icon={githubIcon.img} size="1x"/> View on GitHub
                             </Button>
                         </div>
                     </div>

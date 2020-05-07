@@ -11,8 +11,8 @@ class TitleBlock extends React.Component {
     render() {
         return (
             <div className="TitleBlock">
-                <h1 className="TitleBlock-title">{this.props.title}</h1>
-                <p className="TitleBlock-description">{this.props.description}</p>
+                <h1 style={{fontSize: this.props.titleSize}} className="TitleBlock-title">{this.props.title}</h1>
+                <p style={{fontSize: this.props.descriptionSize}} className="TitleBlock-description">{this.props.description}</p>
             </div>
         );
     }

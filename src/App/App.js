@@ -4,8 +4,8 @@ import ReactFullpage from '@fullpage/react-fullpage';
 // Dependant Components
 import Navigation from '../Components/Navigation/Navigation';
 import Homepage from '../Components/Homepage/Homepage';
-import Projects from '../Components/Projects/Projects';
 import Skills from '../Components/Skills/Skills';
+import Projects from '../Components/Projects/Projects';
 import ContactPage from '../Components/Contact/ContactPage';
 
 // CSS

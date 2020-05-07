@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, Button } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 
 // Dependant Components
 import TitleBlock from '../TitleBlock/TitleBlock';
@@ -21,18 +21,27 @@ class ProjectSlide extends React.Component {
         const buttons = this.props.buttons.map( (button) => {
             const icon = global_mapIcon(button.iconName);
             return (
-                <Button variant="outline-dark" size="lg"> 
+                <Button onClick={ () => {
+                    if (button.link !== "") {
+                        window.open(button.link, '_blank');
+                    }
+                }} variant="outline-dark" size="lg"> 
                 <FontAwesomeIcon icon={icon.img} size="1x"/> 
                 {` ${button.title}`}
                 </Button>
             )
         });
 
-        const descriptions = this.props.descriptionLong.sections.map( (section) => {
+        const descriptions = this.props.descriptionLong.sections.map( (section, index) => {
+            const paragraphs = section.contents.map((content, index) => {
+                return (
+                    <p key={index}>{content}</p>
+                );
+            })
             return (
-                <div className="ProjectSlide-description-section">
+                <div key={index} className="ProjectSlide-description-sections">
                     <h4>{section.title}</h4>
-                    <p>{section.content}</p>
+                    {paragraphs}
                 </div>
             );
         });
@@ -41,7 +50,7 @@ class ProjectSlide extends React.Component {
         return (
             <div className="slide" style={{backgroundColor: this.props.bgColor}}>
                 <div className="ProjectSlide-leftWrapper">
-                    <TitleBlock title={this.props.title} description={this.props.descriptionShort}></TitleBlock>
+                    <TitleBlock title={this.props.title} titleSize={'72px'} description={this.props.descriptionShort} descriptionSize={'24px'}></TitleBlock>
                     <div className="ProjectSlide-description-box">
                         <p className="ProjectSlide-extended-description"> {descriptions}
                         </p>
@@ -67,12 +76,3 @@ class ProjectSlide extends React.Component {
 
 
 export default ProjectSlide;
-
-/**
- * props
- * bg-color: (hex)
- * title:
- * description:
- * image: (url)
- * style-version: (left or right) -> can be like bootstrap, have different classes
- */

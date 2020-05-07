@@ -1,6 +1,6 @@
 // Font Awesome
 import { faLinkedin, faBootstrap, faGithub, faSwift, faJava, faPython, faCss3Alt, faHtml5, faJsSquare, faReact, faNode, faRaspberryPi} from '@fortawesome/free-brands-svg-icons';
-import { faMobile, faInbox ,faLaptopCode, faTerminal, faCoffee ,faFileAlt } from '@fortawesome/free-solid-svg-icons';
+import { faServer ,faUserLock, faMobile, faInbox ,faLaptopCode, faTerminal, faCoffee ,faFileAlt } from '@fortawesome/free-solid-svg-icons';
 
 const global_mapIcon = (name) => {
     var icon = {
@@ -34,7 +34,7 @@ const global_mapIcon = (name) => {
         icon.color = "#8806CE";
     } else if (name === "node") {
         icon.img = faNode;
-        icon.color = "#84AF35";
+        icon.color = "#138808";
     } else if (name === "raspberry-pi") {
         icon.img = faRaspberryPi;
         icon.color = "#A72842";
@@ -55,6 +55,11 @@ const global_mapIcon = (name) => {
         icon.img = faLinkedin;
     } else if (name === "phone") {
         icon.img = faMobile;
+    } else if (name === "private") {
+        icon.img = faUserLock;
+    } else if (name === "server") {
+        icon.img = faServer;
+        icon.color = "#757575";
     }
 
     return icon;

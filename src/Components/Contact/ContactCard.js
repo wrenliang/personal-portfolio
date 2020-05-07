@@ -12,12 +12,15 @@ import './ContactCard.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import global_mapIcon from '../Projects/MapIcon';
 
+import Resume from '../../Assets/resume.pdf';
+
 class ContactCard extends React.Component {
     render() {
         const resumeIcon = global_mapIcon("resume");
         const emailIcon = global_mapIcon("email");
         const linkedInIcon = global_mapIcon("linkedin");
-        const phoneIcon = global_mapIcon("phone");
+        const githubIcon = global_mapIcon("github");
+        const email = "wren.liang@gmail.com";
 
         return (
             <div className="ContactCard">
@@ -30,23 +33,29 @@ class ContactCard extends React.Component {
                         </div>
                     </div>
                     <div className="ContactCard-contact-buttons">
-                            <Button variant="success" size="lg">
+                            <Button onClick={ () => {
+                                window.location.href = `mailto:${email}`;
+                            }} variant="success" size="lg">
                                 <FontAwesomeIcon icon={emailIcon.img} size="1x"></FontAwesomeIcon>
                                 {` Email`}
                             </Button>
-                            <Button variant="success" size="lg">
+                            <Button onClick={ () => {
+                                window.open('https://www.linkedin.com/in/wren-liang/', '_blank');
+                            }} variant="success" size="lg">
                                 <FontAwesomeIcon icon={linkedInIcon.img} size="1x"></FontAwesomeIcon>
                                 {` LinkedIn`}
                             </Button>
                             <Button variant="success" size="lg">
-                                <FontAwesomeIcon icon={phoneIcon.img} size="1x"></FontAwesomeIcon>
-                                {` Phone`}
+                                <FontAwesomeIcon icon={githubIcon.img} size="1x"></FontAwesomeIcon>
+                                {` GitHub`}
                             </Button>
                     </div>
                     
                 </div>
                 <div className="ContactCard-right">
-                    <Button variant="outline-light">
+                    <Button onClick={ () => {
+                        window.open(Resume, '_blank');
+                    }} variant="outline-light">
                         <FontAwesomeIcon icon={resumeIcon.img} size="10x"></FontAwesomeIcon>
                         <h3> <br/> Here's my resume.</h3>
                     </Button>

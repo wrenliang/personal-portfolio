@@ -20,9 +20,8 @@ class Navigation extends React.Component {
                 </div>
                 <div className="Navigation-right">
                     <Button onClick={() => window.fullpage_api.moveTo(2,0)} variant="custom" size="lg"> Skills </Button>
-                    <Button variant="custom" size="lg"> Experience </Button>
-                    <Button variant="custom" size="lg"> Projects </Button>
-                    <Button variant="custom" size="lg"> Resume </Button>
+                    <Button onClick={() => window.fullpage_api.moveTo(3,0)} variant="custom" size="lg"> Projects </Button>
+                    <Button onClick={() => window.fullpage_api.moveTo(4,0)} variant="custom" size="lg"> Contact/Resume </Button>
                 </div>
             </div>
         );

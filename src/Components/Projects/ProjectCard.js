@@ -38,7 +38,7 @@ class ProjectCard extends React.Component {
             return (
                 <div className="ProjectCard" onMouseEnter={this.toggleHover} onMouseLeave={this.toggleHover}
                 onClick={()=> {
-                    alert("hello!");
+                    window.fullpage_api.moveTo(3, this.props.slideNo);
                 }}
                 style={hoverStyle}>
                     <h1 className="ProjectCard-title">{this.props.title}</h1>
