@@ -20,7 +20,7 @@ class Skills extends React.Component {
                         [
                             {
                                 key: "cplusplus",
-                                text: "C & C++",
+                                text: "C/C++",
                                 class: "SkillCard-list-li-standard"
                             },
                             {
@@ -32,11 +32,6 @@ class Skills extends React.Component {
                                 key: "swift",
                                 text: "Swift",
                                 class: "SkillCard-list-li-ios"
-                            },
-                            {
-                                key: "python",
-                                text: "Python",
-                                class: "SkillCard-list-li-standard"
                             },
                             {
                                 key: "html-css",
@@ -53,13 +48,23 @@ class Skills extends React.Component {
                     <SkillCard title={'Tools'} skills={
                         [
                             {
+                                key: "git",
+                                text: "Git",
+                                class: "SkillCard-list-li-standard"
+                            },
+                            {
                                 key: "xcode",
                                 text: "Xcode",
                                 class: "SkillCard-list-li-ios"
                             },
                             {
-                                key: "git",
-                                text: "Git",
+                                key: "vscode",
+                                text: "VS Code",
+                                class: "SkillCard-list-li-web"
+                            },
+                            {
+                                key: "intellij",
+                                text: "IntelliJ IDEA",
                                 class: "SkillCard-list-li-standard"
                             },
                             {

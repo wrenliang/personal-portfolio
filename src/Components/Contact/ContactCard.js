@@ -12,7 +12,7 @@ import './ContactCard.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import global_mapIcon from '../Projects/MapIcon';
 
-import Resume from '../../Assets/resume.pdf';
+import Resume from '../../Assets/website-resume.pdf';
 
 class ContactCard extends React.Component {
     render() {
