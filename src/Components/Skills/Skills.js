@@ -1,7 +1,6 @@
 import React from 'react';
 
 // Dependant Components
-import TitleBlock from '../TitleBlock/TitleBlock';
 import SkillCard from './SkillCard';
 
 // CSS
