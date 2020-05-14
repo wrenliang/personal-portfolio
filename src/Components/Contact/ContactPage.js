@@ -12,7 +12,7 @@ class ContactPage extends React.Component {
         return (
             <div className="section" id="ContactPage">
                 <div className="ContactPage-wrapper">
-                    <h1> Let's get in touch </h1>
+                    <h1> Let's get in touch. </h1>
                     <div className="ContactPage-businessCard">
                         <ContactCard></ContactCard>
                     </div>
