@@ -9,14 +9,15 @@ import './Homepage.css';
 class Homepage extends React.Component {
     render() {
         const roles = [
-            "a Computer Engineering student",
-            "an iOS Developer",
-            "a Software Development Intern"
+            "am a Software Engineer Intern",
+            "study Computer Engineering",
+            "am a Technical Lead",
+            
         ]
         const locations = [
-            "The University of British Columbia",
+            "Orbis Investments",
+            "University of British Columbia",
             "UBC Launch Pad",
-            "Orbis Investments Canada"
         ]
 
         return (
@@ -27,7 +28,7 @@ class Homepage extends React.Component {
                     </div>
                     <div className="Homepage-description-wrapper">
                         <div className="Homepage-who-i-am-wrapper">
-                            <h1>I am <TextLoop className="Homepage-animated-text" fade={true} mask={true} children={roles}
+                            <h1>I <TextLoop className="Homepage-animated-text" fade={true} mask={true} children={roles}
                                 interval={4000} adjustingSpeed={750} springConfig={{
                                     stiffness: 300,
                                     damping: 30

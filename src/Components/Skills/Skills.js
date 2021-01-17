@@ -18,18 +18,68 @@ class Skills extends React.Component {
                     <SkillCard title={'Languages'} skills={
                         [
                             {
+                                key: "swift",
+                                text: "Swift",
+                                class: "SkillCard-list-li-ios"
+                            },
+                            {
+                                key: "javascript",
+                                text: "JavaScript",
+                                class: "SkillCard-list-li-web"
+                            },
+                            {
                                 key: "cplusplus",
                                 text: "C/C++",
+                                class: "SkillCard-list-li-standard"
+                            },
+                            {
+                                key: "csharp",
+                                text: "C#",
                                 class: "SkillCard-list-li-standard"
                             },
                             {
                                 key: "java",
                                 text: "Java",
                                 class: "SkillCard-list-li-standard"
+                            }
+                        ]
+                    }/>
+                    <SkillCard title={'Tools'} skills={
+                        [
+                            {
+                                key: "xcode",
+                                text: "Xcode",
+                                class: "SkillCard-list-li-ios"
                             },
                             {
-                                key: "swift",
-                                text: "Swift",
+                                key: "git",
+                                text: "Git",
+                                class: "SkillCard-list-li-standard"
+                            },
+                            {
+                                key: "linux",
+                                text: "Linux",
+                                class: "SkillCard-list-li-standard"
+                            },
+                            {
+                                key: "docker",
+                                text: "Docker",
+                                class: "SkillCard-list-li-standard"
+                            },
+                            {
+                                key: "aws",
+                                text: "AWS",
+                                class: "SkillCard-list-li-standard"
+                            }
+                        ]
+                        }/>
+                </div>
+                <div className="Skills-rightWrapper">
+                    <SkillCard title={'Technologies'} skills={
+                        [
+                            {
+                                key: "uikit",
+                                text: "UIKit",
                                 class: "SkillCard-list-li-ios"
                             },
                             {
@@ -38,74 +88,34 @@ class Skills extends React.Component {
                                 class: "SkillCard-list-li-web"
                             },
                             {
-                                key: "javascript",
-                                text: "JavaScript",
-                                class: "SkillCard-list-li-web"
-                            }
-                        ]
-                    }/>
-                    <SkillCard title={'Tools'} skills={
-                        [
-                            {
-                                key: "git",
-                                text: "Git",
-                                class: "SkillCard-list-li-standard"
-                            },
-                            {
-                                key: "xcode",
-                                text: "Xcode",
-                                class: "SkillCard-list-li-ios"
-                            },
-                            {
-                                key: "vscode",
-                                text: "VS Code",
-                                class: "SkillCard-list-li-web"
-                            },
-                            {
-                                key: "intellij",
-                                text: "IntelliJ IDEA",
-                                class: "SkillCard-list-li-standard"
-                            },
-                            {
-                                key: "postman",
-                                text: "Postman",
-                                class: "SkillCard-list-li-standard"
-                            }
-                        ]
-                        }/>
-                </div>
-                <div className="Skills-rightWrapper">
-                    <SkillCard title={'Frameworks'} skills={
-                        [
-                            {
-                                key: "junit",
-                                text: "JUnit",
-                                class: "SkillCard-list-li-standard"
-                            },
-                            {
-                                key: "uikit",
-                                text: "UIKit",
-                                class: "SkillCard-list-li-ios"
-                            },
-                            {
-                                key: "spritekit",
-                                text: "SpriteKit",
-                                class: "SkillCard-list-li-ios"
-                            },
-                            {
                                 key: "react",
                                 text: "React",
                                 class: "SkillCard-list-li-web"
                             },
                             {
-                                key: "bootstrap",
-                                text: "Bootstrap",
+                                key: "angular",
+                                text: "AngularJS",
                                 class: "SkillCard-list-li-web"
                             },
                             {
                                 key: "node",
-                                text: "Node.js & Express.js",
+                                text: "Node.js",
                                 class: "SkillCard-list-li-web"
+                            },
+                            {
+                                key: "dotnet",
+                                text: ".NET Core",
+                                class: "SkillCard-list-li-standard"
+                            },
+                            {
+                                key: "mysql",
+                                text: "MySQL",
+                                class: "SkillCard-list-li-standard"
+                            },
+                            {
+                                key: "sql-server",
+                                text: "SQL Server",
+                                class: "SkillCard-list-li-standard"
                             }
                         ]
                         }>
